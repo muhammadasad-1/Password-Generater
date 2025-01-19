@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="password" readonly>
+        <div class="options">
+            <label><input type="checkbox" id="includeUppercase" checked> Uppercase</label><hr>
+            <label><input type="checkbox" id="includeLowercase" checked> Lowercase</label><hr>
+            <label><input type="checkbox" id="includeNumbers" checked> Numbers</label><hr>
+            <label><input type="checkbox" id="includeSpecial" checked> Special Characters</label><hr>
+            <br><br>
+            <label for="length">Password Length:</label>
+            <input type="number" id="length" value="12" min="4" max="128">
+        </div>
+        <button class="btn" onclick="generatePassword()">Generate Password</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
